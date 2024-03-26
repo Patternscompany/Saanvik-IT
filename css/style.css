@@ -1,6 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06BBCC;
+    --primary: #0b344b;
+    --secondary:#76be01;
     --light: #F0FBFC;
     --dark: #181d38;
 }
@@ -77,6 +78,9 @@
 
 
 /*** Navbar ***/
+.navbar{
+    background-color: var(--primary);
+}
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -89,7 +93,7 @@
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: #FFFFFF;
+    color: var(--light);
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
@@ -97,7 +101,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 @media (max-width: 991.98px) {
@@ -117,7 +121,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--dark);
+    color: var(--light);
     font-weight: 500;
 }
 
@@ -134,6 +138,16 @@
         visibility: hidden;
         transition: .5s;
     }
+    .navbar .nav-item .dropdown-menu .drop-items {
+       display: flex;
+       justify-content: space-between;
+     
+    }
+    .navbar .nav-item .dropdown-menu .drop-items div:first-child {
+        border-right: 2px solid var(--secondary);
+           
+    }
+
 
     .navbar .dropdown-menu.fade-down {
         top: 100%;
@@ -273,6 +287,29 @@
 
 
 /*** Categories & Courses ***/
+
+
+.courses .courses-list .col-lg-4 a img{
+  width: 100%;
+  background-color:var(--secondary);
+
+}
+.courses .courses-list .col-lg-4 a{
+
+box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+}
+.courses .more-btn {
+margin-block: 2rem;
+
+}
+.courses .more-btn a{
+    background-color: var(--secondary);
+    color: var(--light);
+    padding: 12px 22px ;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    font-weight: 600;
+}
+
 .category img,
 .course-item img {
     transition: .5s;
