@@ -14,14 +14,14 @@
     --bs-yellow: #ffc107;
     --bs-green: #198754;
     --bs-teal: #20c997;
-    --bs-cyan: #0dcaf0;
+    --bs-cyan:  var(--secondary);
     --bs-white: #fff;
     --bs-gray: #6c757d;
     --bs-gray-dark: #343a40;
     --bs-primary: var(--secondary);
     --bs-secondary: #6c757d;
     --bs-success: #198754;
-    --bs-info: #0dcaf0;
+    --bs-info:  var(--secondary);
     --bs-warning: #ffc107;
     --bs-danger: #dc3545;
     --bs-light: #F0FBFC;
@@ -3093,16 +3093,16 @@ fieldset:disabled .btn {
 
 .btn-primary:hover {
     color: #000;
-    background-color: #2bc5d4;
-    border-color: #1fc2d1
+    background-color: var(--secondary);
+    border-color: var(--secondary);
 }
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
     color: #000;
-    background-color: #2bc5d4;
-    border-color: #1fc2d1;
-    box-shadow: 0 0 0 .25rem rgba(5, 159, 173, 0.5)
+    background-color:  var(--secondary);
+    border-color:  var(--secondary);
+    box-shadow: 0 0 0 .25rem  var(--secondary);
 }
 
 .btn-check:checked+.btn-primary,
@@ -3111,8 +3111,8 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show>.btn-primary.dropdown-toggle {
     color: #000;
-    background-color: #38c9d6;
-    border-color: #1fc2d1
+    background-color:  var(--secondary);
+    border-color:  var(--secondary);
 }
 
 .btn-check:checked+.btn-primary:focus,
@@ -3222,20 +3222,20 @@ fieldset:disabled .btn {
 
 .btn-info {
     color: #000;
-    background-color: #0dcaf0;
-    border-color: #0dcaf0
+    background-color:  var(--secondary);
+    border-color:  var(--secondary)
 }
 
 .btn-info:hover {
     color: #000;
-    background-color: #31d2f2;
+    background-color:  var(--secondary);
     border-color: #25cff2
 }
 
 .btn-check:focus+.btn-info,
 .btn-info:focus {
     color: #000;
-    background-color: #31d2f2;
+    background-color:  var(--secondary);
     border-color: #25cff2;
     box-shadow: 0 0 0 .25rem rgba(11, 172, 204, 0.5)
 }
@@ -3261,8 +3261,8 @@ fieldset:disabled .btn {
 .btn-info:disabled,
 .btn-info.disabled {
     color: #000;
-    background-color: #0dcaf0;
-    border-color: #0dcaf0
+    background-color:  var(--secondary);
+    border-color:  var(--secondary)
 }
 
 .btn-warning {
@@ -3566,14 +3566,14 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-info {
-    color: #0dcaf0;
-    border-color: #0dcaf0
+    color:  var(--secondary);
+    border-color:  var(--secondary)
 }
 
 .btn-outline-info:hover {
     color: #000;
-    background-color: #0dcaf0;
-    border-color: #0dcaf0
+    background-color:  var(--secondary);
+    border-color:  var(--secondary)
 }
 
 .btn-check:focus+.btn-outline-info,
@@ -3587,8 +3587,8 @@ fieldset:disabled .btn {
 .btn-outline-info.active,
 .btn-outline-info.dropdown-toggle.show {
     color: #000;
-    background-color: #0dcaf0;
-    border-color: #0dcaf0
+    background-color:  var(--secondary);
+    border-color:  var(--secondary)
 }
 
 .btn-check:checked+.btn-outline-info:focus,
@@ -3601,7 +3601,7 @@ fieldset:disabled .btn {
 
 .btn-outline-info:disabled,
 .btn-outline-info.disabled {
-    color: #0dcaf0;
+    color:  var(--secondary);
     background-color: transparent
 }
 
@@ -4753,8 +4753,9 @@ fieldset:disabled .btn {
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(0, 0, 0, 0.55);
-    border-color: rgba(0, 0, 0, 0.1)
+    color: var(--light);
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary);
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -6913,7 +6914,7 @@ fieldset:disabled .btn {
 }
 
 .link-info {
-    color: #0dcaf0
+    color:  var(--secondary)
 }
 
 .link-info:hover,
@@ -7324,7 +7325,7 @@ fieldset:disabled .btn {
 }
 
 .border-info {
-    border-color: #0dcaf0 !important
+    border-color:  var(--secondary) !important
 }
 
 .border-warning {
@@ -8301,7 +8302,7 @@ fieldset:disabled .btn {
 }
 
 .text-info {
-    color: #0dcaf0 !important
+    color:  var(--secondary) !important
 }
 
 .text-warning {
@@ -8357,7 +8358,7 @@ fieldset:disabled .btn {
 }
 
 .bg-info {
-    background-color: #0dcaf0 !important
+    background-color:  var(--secondary) !important
 }
 
 .bg-warning {

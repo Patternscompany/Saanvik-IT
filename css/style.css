@@ -44,7 +44,59 @@
     font-weight: 600;
     transition: .5s;
 }
-
+.button {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 0.7em 2.4em;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: white;
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 500;
+  }
+  
+  .button span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 4px solid white;
+  }
+  
+  .button span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: green;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+  }
+  
+  .button:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: green;
+  }
+  
+  .button:hover {
+    color: white;
+  }
+  
+  .button:active span::before {
+    background: green;
+  }
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #FFFFFF;
@@ -298,17 +350,7 @@
 
 box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
 }
-.courses .more-btn {
-margin-block: 2rem;
 
-}
-.courses .more-btn a{
-    background-color: var(--secondary);
-    color: var(--light);
-    padding: 12px 22px ;
-    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-    font-weight: 600;
-}
 
 .category img,
 .course-item img {
@@ -405,6 +447,9 @@ margin-block: 2rem;
 
 
 /*** Footer ***/
+.footer{
+    background-color: var(--primary) !important;
+}
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
@@ -417,6 +462,7 @@ margin-block: 2rem;
     border: 1px solid #FFFFFF;
     border-radius: 35px;
     transition: .3s;
+    box-shadow:inset 2px 2px 4px var(--secondary),inset -2px -2px 4px var(--secondary);
 }
 
 .footer .btn.btn-social:hover {
@@ -469,3 +515,94 @@ margin-block: 2rem;
     padding-right: 0;
     border-right: none;
 }
+/*rea more and join now buttons*/
+.read-more button {
+    --green: #1BFD9C;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--secondary);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--secondary);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+  }
+  
+  .read-more button:hover {
+    color: var(--secondary);
+    box-shadow: inset 0 0 10px var(--secondary), 0 0 9px 3px var(--secondary);
+  }
+  .read-more button:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, var(--secondary) 40%,var(--secondary) 60% , transparent 100%);
+  }
+  
+  .read-more button:hover:before {
+    transform: translateX(15em);
+  }
+     .join-now button {
+    --green: #1BFD9C;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--light);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--light);
+    box-shadow: inset 0 0 10px var(--light), 0 0 4px 3px var(--light);
+  }
+  
+  .join-now button:hover {
+    color: var(--light);
+    box-shadow: inset 0 0 10px var(--light), 0 0 9px 3px var(--light);
+  }
+  .join-now button:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, var(--light)40%,var(--light) 60% , transparent 100%);
+  }
+  
+  .join-now button:hover:before {
+    transform: translateX(15em);
+  }
+  .about-read{
+    background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
+    color: white;
+    font-weight: 600;
+    
+}
+.about-read:hover{
+    color: white;
+}
+.courses .more-btn {
+    margin-block: 2rem;
+    
+    }
+    .courses .more-btn a{
+        background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
+        color: var(--light);
+        padding: 12px 22px ;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+        font-weight: 600;
+    }

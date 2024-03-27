@@ -42,47 +42,69 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2>
+    <nav class="navbar navbar-expand-lg navbar-light shadow sticky-top p-0">
+        <a href="/" class="navbar-brand d-flex align-items-center px-lg-5">
+            <img src="./img/logo.png" alt="" width="200px">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <a href="/" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link active">About</a>
+                
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item active">404 Page</a>
+                        <div class="drop-items">
+                            <div class="">
+                                <a href="team.html" class="dropdown-item">Java Full Stack</a>
+                                <a href="testimonial.html" class="dropdown-item">Python</a>
+                                <a href="testimonial.html" class="dropdown-item">Devops</a>
+                                <a href="testimonial.html" class="dropdown-item">Azure Devops</a>
+                                <a href="testimonial.html" class="dropdown-item">Docker</a>
+                                <a href="testimonial.html" class="dropdown-item">Kubernetes</a>
+                                <a href="testimonial.html" class="dropdown-item">Terraform</a>
+                                <a href="testimonial.html" class="dropdown-item">AWS</a>
+                                <a href="testimonial.html" class="dropdown-item">Linux</a>
+                                <a href="testimonial.html" class="dropdown-item">Github</a>
+                            </div>
+                           <div>
+                            <a href="testimonial.html" class="dropdown-item">Git</a>
+                            <a href="testimonial.html" class="dropdown-item">Github Actions</a>
+                            <a href="testimonial.html" class="dropdown-item">Ansible</a>
+                            <a href="testimonial.html" class="dropdown-item">Power Bi</a>
+                            <a href="testimonial.html" class="dropdown-item">Snow Flake</a>
+                            <a href="testimonial.html" class="dropdown-item">Azure Bicep</a>
+                            <a href="testimonial.html" class="dropdown-item">Prometgeus</a>
+                            <a href="testimonial.html" class="dropdown-item">Grafana</a>
+                            <a href="testimonial.html" class="dropdown-item">Tableau</a>
+                           </div>
+                        </div>
                     </div>
                 </div>
+                <a href="./blog.html" class="nav-item nav-link">Blog</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="/contact.html" class=" py-4 px-lg-5 d-none d-lg-block">
+                <button class="button"> Join Now <i class="fa fa-arrow-right ms-3"></i>
+                    <span></span>
+                  </button>
+               
+                </a>
         </div>
     </nav>
     <!-- Navbar End -->
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+    <div class="container-fluid bg-primary py-5 mb-5 ">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
                     <h1 class="display-3 text-white animated slideInDown">Not Found</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">404</li>
-                        </ol>
-                    </nav>
+                   
                 </div>
             </div>
         </div>
@@ -99,7 +121,7 @@
                     <h1 class="display-1">404</h1>
                     <h1 class="mb-4">Page Not Found</h1>
                     <p class="mb-4">We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
-                    <a class="btn btn-primary rounded-pill py-3 px-5" href="">Go Back To Home</a>
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="/">Go Back To Home</a>
                 </div>
             </div>
         </div>
@@ -113,22 +135,22 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Quick Link</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="/about.html">About Us</a>
+                    <a class="btn btn-link" href="/contact.html">Contact Us</a>
                     <a class="btn btn-link" href="">Privacy Policy</a>
                     <a class="btn btn-link" href="">Terms & Condition</a>
                     <a class="btn btn-link" href="">FAQs & Help</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>We works, 1 st Floor, Hyderabad, Telangana 500032</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+919513184144​</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>saanvikIT@gmail.com​</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/SAANVIKIT/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.linkedin.com/in/saanvikit/?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -168,15 +190,14 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#">SaanvikIT</a>, All Right Reserved.
 
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
-                        Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                        Designed By <a class="border-bottom" href="https://www.thepatternscompany.com/">The Patterns Company</a>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
-                            <a href="">Home</a>
+                            <a href="/">Home</a>
                             <a href="">Cookies</a>
                             <a href="">Help</a>
                             <a href="">FQAs</a>
