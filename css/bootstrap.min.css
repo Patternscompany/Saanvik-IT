@@ -4477,7 +4477,9 @@ fieldset:disabled .btn {
 }
 
 .navbar-nav .dropdown-menu {
-    position: static
+    position: static;
+    overflow-y: scroll;
+    height: 50vh;
 }
 
 .navbar-text {
@@ -4488,7 +4490,8 @@ fieldset:disabled .btn {
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
-    align-items: center
+    align-items: center;
+  
 }
 
 .navbar-toggler {
