@@ -166,24 +166,24 @@
                         tabindex="0"></iframe>
                 </div>
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form>
+                    <form id="bookingForm">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="number" placeholder="Enter You Number" required>
+                                    <label for="number">Phone Number</label>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -301,6 +301,43 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        //book appointment
+        document.getElementById("bookingForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var fullName = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            
+
+            var number = document.getElementById("number").value;
+            var message = document.getElementById("message").value;
+           
+            var contact = "+919513184144";
+
+            var encodedMessage = encodeURIComponent(
+                "Name: " +
+                fullName +
+                "\n" +
+                "Email: " +
+                email +
+                "\n" +
+                "Number: " +
+                number +
+                "\n" +
+                "Message: " +
+                message
+            );
+
+            // Mobile device, open WhatsApp
+            var whatsappLink = `https://wa.me/${contact}?text=${encodedMessage}`;
+            window.open(whatsappLink, "_blank");
+
+            // Additional: You can reset the form and show a thank you message if needed
+            document.getElementById("thankYouMessage").style.display = "block";
+            document.getElementById("bookingForm").reset();
+        });
+    </script>
 </body>
 
 </html>
